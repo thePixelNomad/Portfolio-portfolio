@@ -371,7 +371,7 @@ footer p {
     }
 
     .hero {
-        min-height: 50vh;
+        min-height: 100vh;
     }
 
     .hero-content h3 {
@@ -387,7 +387,7 @@ footer p {
     }
 
     .textbuttons button {
-        width: 50%;
+        width: 1000%;
         padding: 12px;
         font-size: 0.95rem;
     }
@@ -481,4 +481,5 @@ footer p {
     }
 
 }
+
 

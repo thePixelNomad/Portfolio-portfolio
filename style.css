@@ -387,7 +387,7 @@ footer p {
     }
 
     .textbuttons button {
-        width: 1000%;
+        width: 100%;
         padding: 12px;
         font-size: 0.95rem;
     }
@@ -481,5 +481,6 @@ footer p {
     }
 
 }
+
 
 

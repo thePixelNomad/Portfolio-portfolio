@@ -352,10 +352,14 @@ footer p {
     .container {
         padding: 0 15px;
     }
-
-    /* Navigation */
-    .logo {
+.logo {
         font-size: 1.4rem;
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: 0.8rem;
+        padding: 0.6rem 0;
     }
 
     .nav-links {
@@ -366,38 +370,26 @@ footer p {
         font-size: 0.95rem;
     }
 
-    /* Hero Section */
     .hero {
         min-height: 70vh;
     }
 
-    .hero-content {
-        width: 90%;
-    }
-
     .hero-content h3 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 
     .hero-content h2 {
-        font-size: 2.2rem;
+        font-size: 2.1rem;
     }
 
     .hero-content p {
         font-size: 1rem;
-        letter-spacing: 1px;
-    }
-
-    .textbuttons {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        word-spacing: normal;
     }
 
     .textbuttons button {
         width: 100%;
-        padding: 10px 20px;
+        padding: 12px;
+        font-size: 0.95rem;
     }
 
     /* General Sections */
@@ -487,4 +479,5 @@ footer p {
         height: 38px;
         font-size: 16px;
     }
+
 }

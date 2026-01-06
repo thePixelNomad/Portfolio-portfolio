@@ -383,7 +383,7 @@ footer p {
     }
 
     .hero-content p {
-        font-size: 0.5rem;
+        font-size: 1.4rem;
     }
 
     .textbuttons button {
@@ -422,7 +422,7 @@ footer p {
 
     /* Skills */
     .skills {
-        max-width: 100%;
+        max-width: 90%;
         padding: 0 10px;
     }
 
@@ -481,6 +481,7 @@ footer p {
     }
 
 }
+
 
 
 

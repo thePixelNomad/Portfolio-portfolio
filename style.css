@@ -1,21 +1,21 @@
-:root {
-    --bg-primary: #001f3f;
-    /* Deep Navy */
-    --bg-secondary: #57504C;
-    /* Silhouette Umber-Charcoal */
-    --accent: #228B22;
-    /* Forest Green */
-    --text-light: #f0f0f0;
-    --text-dark: #020202;
-    --border: #444;
-}
-
+/* Universal reset: border-box sizing & remove default margins/padding */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+/* CSS custom properties (variables) for consistent theming */
+:root {
+    --bg-primary: #001f3f;     
+    --bg-secondary: #57504C;     
+    --accent: #228B22;           
+    --text-light: #f0f0f0;       
+    --text-dark: #020202;        
+    --border: #444;              
+}
+
+/* Base body styles */
 body {
     font-family: 'Georgia', serif;
     background: var(--bg-primary);
@@ -23,12 +23,14 @@ body {
     line-height: 1.6;
 }
 
+/* Centered container with max-width */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
+/* Fixed header with blur effect */
 .header {
     position: fixed;
     top: 0;
@@ -38,6 +40,7 @@ body {
     z-index: 1000;
 }
 
+/* Flexbox navigation */
 .nav {
     display: flex;
     justify-content: space-between;
@@ -45,18 +48,21 @@ body {
     padding: 1rem 0;
 }
 
+/* Logo styling */
 .logo {
     font-size: 1.8rem;
     font-weight: bold;
     color: var(--accent);
 }
 
+/* Navigation links list */
 .nav-links {
     list-style: none;
     display: flex;
     gap: 2rem;
 }
 
+/* Nav link styling with hover effect */
 .nav-links a {
     color: var(--text-light);
     text-decoration: none;
@@ -68,10 +74,12 @@ body {
     color: var(--accent);
 }
 
+/* Standard section spacing */
 .section {
     padding: 100px 0;
 }
 
+/* Full-screen hero section with background image */
 .hero {
     background-image: url(hero.png);
     background-size: cover;
@@ -83,12 +91,13 @@ body {
     align-items: center;
 }
 
+/* Centered hero content container */
 .hero-content {
     text-align: center;
     width: 50%;
-
 }
 
+/* Hero typography */
 .hero-content h3 {
     font-size: 2rem;
     padding-bottom: 3px;
@@ -99,8 +108,6 @@ body {
     font-size: 3rem;
     text-transform: uppercase;
     color: var(--accent);
-
-
 }
 
 .hero-content p {
@@ -110,12 +117,14 @@ body {
     padding-bottom: 30px;
 }
 
+/* Button container with spacing */
 .textbuttons {
     word-spacing: 20px;
     justify-content: center;
     align-items: center;
 }
 
+/* Button styling with hover effect */
 .textbuttons button {
     text-transform: uppercase;
     font-size: 1rem;
@@ -123,10 +132,8 @@ body {
     background-color: var(--text-dark);
     padding: 5px 20px;
     font-weight: bold;
-    border: 2px var(--border)solid;
+    border: 2px var(--border) solid;
     border-radius: 50px;
-
-
 }
 
 .textbuttons button:hover {
@@ -134,6 +141,7 @@ body {
     cursor: pointer;
 }
 
+/* Two-column grid for about section */
 .about-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -141,6 +149,7 @@ body {
     align-items: center;
 }
 
+/* Section heading style */
 h2 {
     font-size: 3rem;
     text-align: center;
@@ -148,16 +157,19 @@ h2 {
     color: var(--accent);
 }
 
+/* About text alignment override */
 .about-text h2 {
     margin-bottom: 1rem;
     text-align: left;
 }
 
+/* About paragraph styling */
 .about-text p {
     font-size: 1.2rem;
     margin-bottom: 1rem;
 }
 
+/* About image styling */
 .about-image img {
     width: 100%;
     height: 21rem;
@@ -165,26 +177,27 @@ h2 {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
+/* Skills container */
 .skills {
     margin-top: 2rem;
     max-width: 37.5rem;
     margin: 0 auto;
-
-
 }
 
+/* Individual skill item */
 .skill-item {
     margin-bottom: 1rem;
 }
 
+/* Skill name with flexbox spacing */
 .skill-name {
     font-weight: 600;
     margin-bottom: 0.5rem;
     display: flex;
     justify-content: space-between;
-
 }
 
+/* Skill bar background */
 .skill-bar {
     height: 8px;
     background-color: var(--bg-secondary);
@@ -192,6 +205,7 @@ h2 {
     overflow: hidden;
 }
 
+/* Animated skill progress bar */
 .skill-progress {
     height: 100%;
     border-radius: 4px;
@@ -199,6 +213,7 @@ h2 {
     transition: width 1.5s ease-in-out;
 }
 
+/* Responsive grid for cards/projects */
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -206,16 +221,15 @@ h2 {
     background: var(--bg-secondary);
     padding: 4rem 3rem;
     border-radius: 20px;
-  ;
 }
 
+/* Individual card with hover animation */
 .card {
     background: var(--bg-primary);
     padding: 2.5rem;
     border-radius: 15px;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
-
 }
 
 .card:hover {
@@ -223,6 +237,7 @@ h2 {
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
 }
 
+/* Card typography */
 .card h3 {
     font-family: 'Georgia', serif;
     color: var(--accent);
@@ -237,6 +252,7 @@ h2 {
     line-height: 1.8;
 }
 
+/* Card link button styling */
 .card-link {
     display: inline-block;
     color: var(--text-light);
@@ -249,15 +265,13 @@ h2 {
     transition: background 0.3s, color 0.3s;
 }
 
-
-
 .card-link:hover {
     border: 2px solid #228B22;
     background: var(--text-light);
     color: var(--accent);
 }
 
-/* Contact Section */
+/* Contact section - flex layout */
 .contact-info {
     display: flex;
     justify-content: center;
@@ -266,19 +280,15 @@ h2 {
     padding: 4rem 3rem;
     border-radius: 20px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
-
-
 }
 
+/* Individual contact item */
 .contact-item {
     background: var(--bg-primary);
     padding: 2rem 3rem;
     border-radius: 15px;
-
     min-width: 250px;
-
     transition: transform 0.5s, box-shadow 0.1s;
-
 }
 
 .contact-item:hover {
@@ -286,6 +296,7 @@ h2 {
     box-shadow: var(--border);
 }
 
+/* Contact item typography */
 .contact-item h4 {
     font-family: 'Georgia', serif;
     color: var(--accent);
@@ -298,14 +309,13 @@ h2 {
     font-size: 1.05rem;
 }
 
-/* Footer */
+/* Footer styling */
 footer {
     background: var(--accent);
     color: var(--text-light);
     text-align: center;
     padding: 2rem 0;
     margin-top: 1rem;
-
 }
 
 footer h4 {
@@ -319,8 +329,7 @@ footer p {
     color: var(--text-light);
 }
 
-
-
+/* Social media icons */
 .social-icons {
     display: flex;
     gap: 15px;
@@ -347,21 +356,26 @@ footer p {
     background-color: #555;
 }
 
-/* Mobile and Tablet devices */
+/* Mobile and Tablet responsive styles */
 @media (max-width: 768px) {
+    /* Adjust container padding */
     .container {
         padding: 0 15px;
     }
-.logo {
+    
+    /* Smaller logo */
+    .logo {
         font-size: 1.4rem;
     }
 
+    /* Stack navigation vertically */
     .nav {
         flex-direction: column;
         gap: 0.8rem;
         padding: 0.6rem 0;
     }
 
+    /* Adjust nav link spacing */
     .nav-links {
         gap: 1rem;
     }
@@ -370,10 +384,12 @@ footer p {
         font-size: 0.95rem;
     }
 
+    /* Full-height hero on mobile */
     .hero {
         min-height: 100vh;
     }
 
+    /* Smaller hero typography */
     .hero-content h3 {
         font-size: 1.4rem;
     }
@@ -386,23 +402,25 @@ footer p {
         font-size: 1rem;
     }
 
+    /* Full-width buttons */
     .textbuttons button {
         width: 100%;
         padding: 12px;
         font-size: 0.95rem;
     }
 
-    /* General Sections */
+    /* Reduced section padding */
     .section {
         padding: 60px 0;
     }
 
+    /* Smaller headings */
     h2 {
         font-size: 2rem;
         margin-bottom: 2rem;
     }
 
-    /* About Section */
+    /* Stack about section */
     .about-grid {
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -420,13 +438,13 @@ footer p {
         height: 18rem;
     }
 
-    /* Skills */
+    /* Adjust skills width */
     .skills {
         max-width: 90%;
         padding: 0 10px;
     }
 
-    /* Cards/Projects */
+    /* Single column cards */
     .cards {
         grid-template-columns: 1fr;
         gap: 1.5rem;
@@ -445,7 +463,7 @@ footer p {
         font-size: 1rem;
     }
 
-    /* Contact Section */
+    /* Stack contact items */
     .contact-info {
         flex-direction: column;
         gap: 1.5rem;
@@ -465,7 +483,7 @@ footer p {
         font-size: 1rem;
     }
 
-    /* Footer */
+    /* Adjust footer */
     footer {
         padding: 1.5rem 1rem;
     }
@@ -474,15 +492,10 @@ footer p {
         font-size: 1.3rem;
     }
 
+    /* Slightly smaller social icons */
     .social-icons a {
         width: 38px;
         height: 38px;
         font-size: 16px;
     }
-
 }
-
-
-
-
-

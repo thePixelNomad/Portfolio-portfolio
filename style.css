@@ -4,16 +4,14 @@
     margin: 0;
     padding: 0;
 }
-
-/* CSS custom properties (variables) for consistent theming */
 /* CSS custom properties (variables) for consistent theming */
 :root {
-    --bg-primary: #1a1625;       /* Deep purple background */
-    --bg-secondary: #2d2438;     /* Lighter purple secondary */
-    --accent: #00d9ff;           /* Bright cyan accent */
-    --text-light: #e8e6f0;       /* Light text */
-    --text-dark: #020202;        /* Dark text */
-    --border: #4a3f5c;           /* Border color */
+    --bg-primary: #001f3f;
+    --bg-secondary: #57504C;
+    --accent: #228B22;
+    --text-light: #f0f0f0;
+    --text-dark: #020202;
+    --border: #444;
 }
 
 /* Base body styles */
@@ -500,5 +498,6 @@ footer p {
         font-size: 16px;
     }
 }
+
 
 

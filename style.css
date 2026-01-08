@@ -6,13 +6,14 @@
 }
 
 /* CSS custom properties (variables) for consistent theming */
+/* CSS custom properties (variables) for consistent theming */
 :root {
-    --bg-primary: #0f172a;       /* Deep slate background */
-    --bg-secondary: #1e293b;     /* Lighter slate secondary */
-    --accent: #f97316;           /* Vibrant orange accent */
-    --text-light: #f1f5f9;       /* Light text */
+    --bg-primary: #1a1625;       /* Deep purple background */
+    --bg-secondary: #2d2438;     /* Lighter purple secondary */
+    --accent: #00d9ff;           /* Bright cyan accent */
+    --text-light: #e8e6f0;       /* Light text */
     --text-dark: #020202;        /* Dark text */
-    --border: #475569;           /* Border color */
+    --border: #4a3f5c;           /* Border color */
 }
 
 /* Base body styles */
@@ -499,4 +500,5 @@ footer p {
         font-size: 16px;
     }
 }
+
 
